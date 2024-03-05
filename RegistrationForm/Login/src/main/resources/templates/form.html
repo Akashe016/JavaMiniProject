@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" th:href="@{../CSS/formpage.css}">
+    
+</head>
+<body>
+    <center>
+        <form 
+        	class="application" id ="myform"
+        	th:action="@{/form}" method="post" role="form" th:object="${form}"	
+        >
+            <h1>Application form</h1>
+
+              <div class="emails">
+                <label for="email">E-mail</label>
+              </div>  
+            <input th:field="*{email}" type="email" placeholder="Email" name="email" size="25" class="emailtext">
+
+    
+              <div class="fullName">
+                <label for="fullName">Full Name</label>
+              </div>
+              <input th:field="*{fullName}"type="text" placeholder="Enter Full Name" name="fullName" class="fullNametext">
+
+              <div class="phoneNumber">
+                <label for="phoneNumber">Phone Number</label>
+              </div>
+              <input th:field="*{phoneNumber}" type="number" placeholder="Enter phoneNumber" name="phoneNumber" class="phoneNumbertext">
+
+              <div class="dateofbirth">
+                <label for="dateofbirth">Date Of Birth</label>
+              </div>
+              <input th:field="*{dateofbirth}" type="date" name="dateofbirth" class="dateofbirthtext">
+
+              <div class="gender">
+                <label for="gender">Gender</label>
+              </div>
+              <select class="gendertext" name="gender">
+                <option th:field="*{gender}" value=" " > </option>
+                <option th:field="*{gender}" value="Male">Male</option>
+                <option th:field="*{gender}" value="Female">Female</option>
+                <option th:field="*{gender}" value="Others">Others</option>
+              </select>
+
+              <div class="address">
+                <label for="address">Address</label>
+              </div>
+              <textarea placeholder="Enter address" class="addresstext" th:field="*{address}" name="address"></textarea>
+    
+              <div class="state">
+                <label for="state">State</label>
+              </div>
+              <input th:field="*{state}" type="text" placeholder="Enter state" name="state" class="statetext">
+
+              <div class="city">
+                <label for="city">City</label>
+              </div>
+              <input th:field="*{city}" type="text" placeholder="Enter city" name="city" class="citytext">
+
+              <div class="pincode">
+                <label for="pincode">Pincode</label>
+              </div>
+              <input th:field="*{pincode}" type="number" placeholder="Enter pincode" name="pincode" class="pincodetext">
+
+              <div class="qualification">
+                <label for="qualification">Qualification</label>
+              </div>
+              <select class="qualificationtext" name="qualification">
+                <option th:field="*{qualification}" value=" "> </option>
+                <option th:field="*{qualification}" value="UG">UG</option>
+                <option th:field="*{qualification}" value="PG">PG</option>
+                <option th:field="*{qualification}" value="Diploma">Diploma</option>
+              </select>
+
+              <div class="course">
+                <label for="course">Course</label>
+              </div>
+              <select class="coursetext" name="course">
+                <option th:field="*{course}" value=" "> </option>
+                <option th:field="*{course}" value="BE">BE</option>
+                <option th:field="*{course}" value="Btech">Btech</option>
+                <option th:field="*{course}" value="ME">ME</option>
+                <option th:field="*{course}" value="Mtech">Mtech</option>
+                <option th:field="*{course}" value="BSC">BSC</option>
+                <option th:field="*{course}" value="MSC">MSC</option>
+                <option th:field="*{course}" value="BCA">BCA</option>
+                <option th:field="*{course}" value="MCA">MCA</option>
+                <option th:field="*{course}" value="BBA">BBA</option>
+                <option th:field="*{course}" value="MBA">MBA</option>
+                <option th:field="*{course}" value="B.com">B.com</option>
+                <option th:field="*{course}" value="M.com">M.com</option>
+                <option th:field="*{course}" value="BA">BA</option>
+                <option th:field="*{course}" value="MA">MA</option>
+                </select>
+
+              <div class="specification">
+                <label for="specification">Specification</label>
+              </div>
+              <select class="specificationtext" name="specification">
+                <option th:field="*{specification}" value=" "> </option>
+                <option th:field="*{specification}" value="Computer Science">Computer Science</option>
+                <option th:field="*{specification}" value="Information technology">Information technology</option>
+                <option th:field="*{specification}" value="Mathematies">Mathematies</option>
+                <option th:field="*{specification}" value="Commerce">Commerce</option>
+                <option th:field="*{specification}" value="Physics">Physics</option>
+                <option th:field="*{specification}" value="English">English</option>
+                <option th:field="*{specification}" value="Tamil">Tamil</option>
+                <option th:field="*{specification}" value="Agriculture">Agriculture</option>
+                <option th:field="*{specification}" value="Non-IT">Non-IT</option>
+                </select>
+
+              <div class="yop">
+                <label for="yop">Year Of Passing</label>
+              </div>
+              <input th:field="*{yop}" type="number" placeholder="Enter year of passing" class="yoptext" name="yop">
+
+              <div class="cgpa">
+                <label for="cgpa">CGPA</label>
+              </div>
+              <input th:field="*{cgpa}" type="number" placeholder="Enter cgpa" class="cgpatext" name="cgpa">
+    
+              <div>
+                <button onclick="showAlert()" type="submit" class="button">Submit</button>                              	
+              </div>
+              
+        </form>
+    </center>
+    
+     <script>
+			document.getElementById("myForm").addEventListener("submit", function(event){
+
+  			event.preventDefault();
+  
+  			this.reset();
+			});
+			
+			 function showAlert() {
+           		
+           		var message = [[${message}]];
+        		if (message) {
+            		alert(message);
+        		}
+        	}    
+	</script>
+    
+</body>
+</html>
