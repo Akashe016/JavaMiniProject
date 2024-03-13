@@ -1,0 +1,46 @@
+body{
+
+    background-color: aqua;
+    padding:65px;
+}
+
+.email{
+
+    background-color: white;
+    border: 1px solid black;
+    width: 360px;
+    height: 400px;
+    text-align: center;
+    padding: 20px;
+    background: -webkit-linear-gradient(left top,red,orange,purple); 
+    border-radius: 55px; 
+}
+
+.emailpage{
+
+    margin-top: 30px;
+    margin-right: 170px;
+    height: 10px;
+    padding: 15px;
+}
+
+.emailtext{
+
+    width: 200px;
+    height: 25px;
+    padding: 5px;
+    border-radius:20px;
+}
+
+.button{
+
+    margin-top: 50px; 
+    padding: 7px;
+    width: 100px;
+    border-radius: 15px;
+}
+
+.button:hover{
+
+    background-color: blue;
+}

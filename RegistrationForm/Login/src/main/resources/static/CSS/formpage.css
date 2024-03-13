@@ -1,0 +1,269 @@
+body{
+
+	background-color: red;
+}
+
+.application{
+
+    background-color: white;
+    border: 1px solid black;
+    width: 600px;
+    height: 1680px;
+    text-align: center;
+    padding: 20px;
+    background: -webkit-linear-gradient(left top,red,orange,purple); 
+    border-radius: 55px;   
+}
+
+.emails{
+
+    margin-top: 40px;
+    margin-right: 165px;
+    height: 15px;
+    padding: 10px;
+}
+
+.regnumber{
+
+    margin-top: 30px;
+    margin-right: 75px;
+    height: 15px;
+    padding: 10px;
+}
+
+.fullName{
+
+    margin-top: 30px;
+    margin-right: 130px;
+    height: 15px;
+    padding: 10px;
+}
+
+.phoneNumber{
+
+    margin-top: 30px;
+    margin-right: 95px;
+    height: 15px;
+    padding: 10px;
+}
+
+.dateofbirth{
+
+    margin-top: 30px;
+    margin-right: 110px;
+    height: 15px;
+    padding: 10px;
+}
+
+.gender{
+
+    margin-top: 30px;
+    margin-right: 160px;
+    height: 15px;
+    padding: 10px;
+}
+
+.address{
+
+    margin-top: 30px;
+    margin-right: 150px;
+    height: 15px;
+    padding: 10px;
+}
+
+.state{
+
+    margin-top: 30px;
+    margin-right: 170px;
+    height: 15px;
+    padding: 10px;
+}
+
+.city{
+
+    margin-top: 30px;
+    margin-right: 180px;
+    height: 15px;
+    padding: 10px;
+}
+
+.pincode{
+
+    margin-top: 30px;
+    margin-right: 150px;
+    height: 15px;
+    padding: 10px;
+}
+
+.qualification{
+
+    margin-top: 30px;
+    margin-right: 115px;
+    height: 15px;
+    padding: 10px;
+}
+
+.course{
+
+    margin-top: 30px;
+    margin-right: 160px;
+    height: 15px;
+    padding: 10px;
+}
+
+.specification{
+
+    margin-top: 30px;
+    margin-right: 110px;
+    height: 15px;
+    padding: 10px;
+}
+
+.yop{
+
+    margin-top: 30px;
+    margin-right: 90px;
+    height: 15px;
+    padding: 10px;
+}
+
+.cgpa{
+
+    margin-top: 30px;
+    margin-right: 165px;
+    height: 15px;
+    padding: 10px;
+}
+
+.button{
+
+    margin-top: 70px; 
+    padding: 7px;
+    width: 100px;
+    border-radius: 15px;
+}
+
+.button:hover{
+
+    background-color: blue;
+}
+
+.emailtext{
+
+    width: 200px;
+    height: 25px;
+    padding: 5px;
+    border-radius:20px;
+}
+
+.regnumbertext{
+
+    width: 200px;
+    height: 25px;
+    padding: 5px;
+    border-radius:20px;
+}
+
+.fullNametext{
+
+    width: 200px;
+    height: 25px;
+    padding: 5px;
+    border-radius:20px;
+}
+
+.phoneNumbertext{
+
+    width: 200px;
+    height: 25px;
+    padding: 5px;
+    border-radius:20px;
+}
+
+.dateofbirthtext{
+
+    width: 200px;
+    height: 25px;
+    padding: 5px;
+    border-radius:20px;
+}
+
+.gendertext{
+
+    width: 215px;
+    height: 35px;
+    padding: 5px;
+    border-radius:20px;
+}
+
+.addresstext{
+
+    width: 200px;
+    height: 25px;
+    padding: 5px;
+    border-radius:20px;
+}
+
+.statetext{
+
+    width: 200px;
+    height: 25px;
+    padding: 5px;
+    border-radius:20px;
+}
+
+.citytext{
+
+    width: 200px;
+    height: 25px;
+    padding: 5px;
+    border-radius:20px;
+}
+
+.pincodetext{
+
+    width: 200px;
+    height: 25px;
+    padding: 5px;
+    border-radius:20px;
+}
+
+.qualificationtext{
+
+    width: 215px;
+    height: 35px;
+    padding: 5px;
+    border-radius:20px;
+}
+
+.coursetext{
+
+    width: 215px;
+    height: 35px;
+    padding: 5px;
+    border-radius:20px;
+}
+
+.specificationtext{
+
+    width: 215px;
+    height: 35px;
+    padding: 5px;
+    border-radius:20px;
+}
+
+.yoptext{
+
+    width: 200px;
+    height: 25px;
+    padding: 5px;
+    border-radius:20px;
+}
+
+.cgpatext{
+
+    width: 200px;
+    height: 25px;
+    padding: 5px;
+    border-radius:20px;
+}

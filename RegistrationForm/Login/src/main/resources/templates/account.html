@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" th:href="@{../CSS/accountpage.css}">
+    
+</head>
+<body>
+
+      	<center>
+         
+      <form 
+      	 class="AccountCreate"
+      	 th:action="@{/account}" method="post" role="form" th:object="${user}"
+      >
+            
+          	<h1 class="hyper">Create your account</h1>
+
+          	<div class="Name">
+            	<label>Name</label>
+          	</div> 
+            <input type="text" placeholder="Name" autocomplete="off" class="Nametext">
+
+            
+          	<div class="email">
+            	<label for="username">E-mail</label>
+          	</div>
+          	<input th:field="*{username}" type="email" name="username" placeholder="Email" autocomplete="off" class="emailtext">
+
+	        <div class="password">
+    	        <label for="password">Password</label>
+        	</div>
+          	<input th:field="*{password}" type="password" name="password" placeholder="Password" autocomplete="off" class="passwordtext" min=8 max=20 Strong="password">
+	
+	        <p>Please set up your new credentials in order to log in.<br>Your new password must:<br><br>• Have at least one uppercase and lowercase<br>• Have at least 8 characters<br>• Have at least one number<br>• Have at least one symbol
+            
+            <div class="ConfirmPassword">
+        	
+        	   <label for="confirmpassword">Confirm Password</label>
+            </div>
+            <input th:field="*{confirmpassword}" type="password" name="confirmpassword" placeholder="Confirm Password" autocomplete="off" class="ConfirmPasswordtext" min="8" max="20" Strong="password">
+          
+            <div>
+              <button type="submit" onclick="showAlert()" class="button">Register</button>
+            </div>
+
+          	<p>Do you have an account? <a href="/login">Login</a></p>
+        
+    </form>
+          </center>
+    
+    
+    <script>
+			 function showAlert() {
+           		
+           		var message = [[${message}]];
+        		if (message) {
+            		alert(message);
+        		}
+        	}    
+	</script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" th:href="@{../CSS/loginpage.css}">
+    
+  </head>
+    <body>
+    <center>
+    
+      <form class="Login"
+      th:action="@{/login}" method="post" role="form" th:object="${user}"
+      >      
+      
+      
+       	<h1>Login</h1>
+  
+    	<div class = "email">
+        	<label for="username">E-mail</label>
+        </div>  
+        <input th:field="*{username}" type="email" placeholder="Email" autocomplete="off" name="username" size="25" class="emailtext">
+
+        <div class = "password">
+          	<label for="password">Password</label>
+        </div> 
+        <input th:field="*{password}" type="password" placeholder="Password" autocomplete="off" name="password" size="25" class="passwordtext" min=8 max=20 Strong="password">
+     
+        <div class="forgot">
+          	<a href="/email">Forgot password?</a>
+   		</div>
+            
+        <div>
+           <button onclick="showAlert()" class="button">Login</button>
+        </div>
+       
+        <div class="link">
+           <p>Don't have an account? <a href="/account">Singup</a></p>
+        </div>
+          
+	</form>
+        	
+</center>
+        		
+        <script>
+			
+			function showAlert() {
+           		
+           		var message = [[${message}]];
+        		if (message) {
+            		alert(message);
+        		}
+        	}            	
+		</script>
+</body>
+</html>
